@@ -1,11 +1,12 @@
 /* Variáveis Globais */
 :root {
-  --cor-primaria: #3498db;
-  --cor-secundaria: #2ecc71;
-  --cor-texto: #333;
-  --cor-fundo: #f5f5f5;
-  --fonte-padrao: Arial, sans-serif;
+  --cor-primaria: #95331D;
+  --cor-secundaria: #195F7B;
+  --cor-texto: #222;
+  --cor-fundo: #eaeaea;
+  --fonte-padrao: 'FreeMono', monospace;
 }
+
 
 /* Reset CSS */
 * {
@@ -20,6 +21,7 @@ body {
   color: var(--cor-texto);
   line-height: 1.6;
   text-align: center;
+
 }
 
 /* Cabeçalho */
@@ -28,8 +30,9 @@ body {
   justify-content: space-between;
   align-items: center;
   background: var(--cor-primaria);
-  padding: 15px;
+  padding: 20px;
   color: white;
+  font-weight: 600;
 }
 
 .menu {
@@ -44,14 +47,16 @@ body {
 .menu a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* Hero Section */
 .hero {
-  padding: 50px;
+  padding: 60px 20px;
   background: var(--cor-secundaria);
   color: white;
+  font-weight: 400;
+  text-align: left;
 }
 
 .btn {
@@ -61,10 +66,12 @@ body {
   border: none;
   cursor: pointer;
   font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
 }
 
 .btn:hover {
-  background: #217dbb;
+  background: #cc4627;
 }
 
 /* Sobre */
@@ -78,8 +85,9 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  gap: 30px;
+
+  padding: 30px;
 }
 
 .card {
@@ -87,6 +95,7 @@ body {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  font-weight: 400;
 }
 
 /* Formulário de Contato */
@@ -94,10 +103,10 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   max-width: 400px;
-  margin: auto;
-  padding: 20px;
+  margin: 20px auto;
+  padding: 30px;
 }
 
 input, textarea {
@@ -105,6 +114,7 @@ input, textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-family: var(--fonte-padrao);
 }
 
 button {
@@ -114,16 +124,68 @@ button {
   border: none;
   cursor: pointer;
   font-size: 16px;
+  font-weight: 600;
 }
 
 button:hover {
-  background: #27ae60;
+  background: #29a1db;
 }
 
 /* Rodapé */
 footer {
-  margin-top: 20px;
-  padding: 10px;
+  margin-top: 30px;
+  padding: 20px;
   background: var(--cor-primaria);
   color: white;
+  font-weight: 400;
 }
+
+.card-projeto {
+    background-color: #e0f7fa; /* Fundo azul claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para o efeito de card */
+    padding: 20px; /* Espaço interno */
+    margin: 20px; /* Espaço externo entre os cards */
+    display: inline-block; /* Para que os cards fiquem lado a lado */
+}
+
+.img-projeto1, .img-projeto2, .img-projeto3, .img-projeto4, .img-projeto5 {
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    border-radius: 10px;
+    width: 100%; /* Ajusta a imagem para ocupar todo o card */
+    height: auto;
+}
+
+.img-projeto1:hover, .img-projeto2:hover, .img-projeto3:hover, .img-projeto4:hover, .img-projeto5:hover {
+    transform: scale(1.05);
+}
+
+.img-projeto1 {
+    width: 200vm;
+    height: 8pc;
+}
+
+.img-projeto2 {
+    width: 200px;
+    height: auto;
+}
+.img-projeto3 {
+  width: 200px;
+  height: 8pc;
+}
+
+.img-projeto4 {
+  width: 200px;
+  height: auto;
+}
+.img-projeto5 {
+  width: 180px;
+  height: auto;
+}
+
+#perfil-img {
+    transition: transform 1.3s ease;
+}
+
+
+
